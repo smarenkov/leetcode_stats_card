@@ -1,6 +1,7 @@
 import { Generator } from "./card";
 import { ActivityExtension } from "./exts/activity";
 import { AnimationExtension } from "./exts/animation";
+import { ComunityExtension } from "./exts/comunity";
 import { ContestExtension } from "./exts/contest";
 import { FontExtension } from "./exts/font";
 import { HeatmapExtension } from "./exts/heatmap";
@@ -33,6 +34,7 @@ export default generate;
 export {
     ActivityExtension,
     AnimationExtension,
+    ComunityExtension,
     Config,
     ContestExtension,
     FontExtension,

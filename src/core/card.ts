@@ -117,6 +117,16 @@ export class Generator {
                     avatar: "",
                     skills: [],
                     country: "",
+                    community: {
+                        postViewCount: 0,
+                        postViewCountDiff: 0,
+                        reputation: 0,
+                        reputationDiff: 0,
+                        solutionCount: 0,
+                        solutionCountDiff: 0,
+                        categoryDiscussCount: 0,
+                        categoryDiscussCountDiff: 0,
+                    },
                 },
                 problem: {
                     easy: {

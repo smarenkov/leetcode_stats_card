@@ -32,6 +32,7 @@ export interface FetchedData {
         avatar: string;
         skills: string[];
         country: string;
+        community: CommunityStats;
     };
 
     problem: {
@@ -75,4 +76,15 @@ export interface Item {
     single?: boolean;
     children?: Item[];
     content?: string;
+}
+
+export interface CommunityStats {
+    postViewCount: number;
+    postViewCountDiff: number;
+    reputation: number;
+    reputationDiff: number;
+    solutionCount: number;
+    solutionCountDiff: number;
+    categoryDiscussCount: number;
+    categoryDiscussCountDiff: number;
 }

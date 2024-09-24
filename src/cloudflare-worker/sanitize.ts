@@ -1,6 +1,7 @@
 import {
     ActivityExtension,
     AnimationExtension,
+    ComunityExtension,
     Config,
     ContestExtension,
     FontExtension,
@@ -75,6 +76,8 @@ export function sanitize(config: Record<string, string>): Config {
         sanitized.extensions.push(ContestExtension);
     } else if (config.ext === "heatmap" || config.extension === "heatmap") {
         sanitized.extensions.push(HeatmapExtension);
+    } else if (config.ext === "comunity" || config.extension === "comunity") {
+        sanitized.extensions.push(ComunityExtension);
     }
 
     if (config.border) {

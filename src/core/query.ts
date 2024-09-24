@@ -23,7 +23,15 @@ export class Query {
                         avatar: userAvatar 
                         skills: skillTags 
                         country: countryName 
-                        ranking
+                        ranking: ranking
+                        postViewCount: postViewCount
+                        postViewCountDiff: postViewCountDiff
+                        reputation: reputation
+                        reputationDiff: reputationDiff
+                        solutionCount: solutionCount
+                        solutionCountDiff: solutionCountDiff
+                        categoryDiscussCount: categoryDiscussCount
+                        categoryDiscussCountDiff: categoryDiscussCountDiff
                     }
                     submits: submitStatsGlobal {
                         ac: acSubmissionNum { difficulty count }
@@ -60,6 +68,16 @@ export class Query {
                 avatar: data.user.profile.avatar,
                 skills: data.user.profile.skills,
                 country: data.user.profile.country,
+                community: {
+                    postViewCount: data.user.profile.postViewCount,
+                    postViewCountDiff: data.user.profile.postViewCountDiff,
+                    reputation: data.user.profile.reputation,
+                    reputationDiff: data.user.profile.reputationDiff,
+                    solutionCount: data.user.profile.solutionCount,
+                    solutionCountDiff: data.user.profile.solutionCountDiff,
+                    categoryDiscussCount: data.user.profile.categoryDiscussCount,
+                    categoryDiscussCountDiff: data.user.profile.categoryDiscussCountDiff,
+                },
             },
             problem: {
                 easy: {
@@ -117,6 +135,15 @@ export class Query {
                         avatar: userAvatar 
                         skills: skillTags 
                         country: countryName
+                        ranking: ranking
+                        postViewCount: postViewCount
+                        postViewCountDiff: postViewCountDiff
+                        reputation: reputation
+                        reputationDiff: reputationDiff
+                        solutionCount: solutionCount
+                        solutionCountDiff: solutionCountDiff
+                        categoryDiscussCount: categoryDiscussCount
+                        categoryDiscussCountDiff: categoryDiscussCountDiff
                     }
                 }
                 submissions: recentSubmitted(userSlug: $username) {
@@ -145,6 +172,16 @@ export class Query {
                 avatar: data.user.profile.avatar,
                 skills: data.user.profile.skills,
                 country: data.user.profile.country,
+                community: {
+                    postViewCount: data.user.profile.postViewCount,
+                    postViewCountDiff: data.user.profile.postViewCountDiff,
+                    reputation: data.user.profile.reputation,
+                    reputationDiff: data.user.profile.reputationDiff,
+                    solutionCount: data.user.profile.solutionCount,
+                    solutionCountDiff: data.user.profile.solutionCountDiff,
+                    categoryDiscussCount: data.user.profile.categoryDiscussCount,
+                    categoryDiscussCountDiff: data.user.profile.categoryDiscussCountDiff,
+                },
             },
             problem: {
                 easy: {
